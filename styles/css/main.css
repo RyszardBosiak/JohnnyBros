@@ -19,6 +19,9 @@ body {
 .color-white {
   color: #FFF; }
 
+.mt-5 {
+  margin-top: 50px !important; }
+
 .button {
   border: none;
   border-radius: 3px;
@@ -37,3 +40,32 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+.scroll-down {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #BBBFCE;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  cursor: pointer; }
+  .scroll-down:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #BBBFCE;
+    border-right: 2px solid #BBBFCE;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    transition-duration: 0.15s; }
+  .scroll-down:focus, .scroll-down:hover, .scroll-down:active {
+    outline: none; }
+    .scroll-down:focus:after, .scroll-down:hover:after, .scroll-down:active:after {
+      top: 30%; }

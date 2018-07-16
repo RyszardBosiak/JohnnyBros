@@ -1,0 +1,36 @@
+.scroll-down {
+  display: block;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid $color-mid-grey;
+  border-radius: 50%;
+  margin: 0 auto;
+	position: relative;
+	cursor: pointer;
+	
+	&:after {
+		content: '';
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid $color-mid-grey;
+    border-right: 2px solid $color-mid-grey;
+    width: 10px;
+    height: 10px;
+    margin: 0 auto;
+		transform: rotate(45deg);
+		transition-duration: $default-easing-time*0.5;
+	}
+	
+	&:focus,
+	&:hover,
+	&:active {
+		outline: none;
+		&:after {
+			top: 30%;
+		}
+	}
+}
