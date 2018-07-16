@@ -1,0 +1,13 @@
+.banner {
+	height: 720px;
+	background-image: url(./../../styles/images/pp-main-background.jpg);
+	background-position: center;
+	background-size: cover;
+}  
+
+.banner-content {
+	top: 50%;
+	position: relative;
+	transform: translateY(-50%);
+	padding: 0 15px;
+}
