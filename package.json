@@ -1,0 +1,20 @@
+{
+  "name": "scss-pre-processor",
+  "version": "1.0.0",
+  "description": "SCSS preprocessor for my homepage.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Ryszard Bosiak",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-update": "0.0.2"
+  },
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
