@@ -69,3 +69,9 @@ body {
     outline: none; }
     .scroll-down:focus:after, .scroll-down:hover:after, .scroll-down:active:after {
       top: 30%; }
+
+nav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; }
