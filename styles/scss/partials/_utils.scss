@@ -13,3 +13,9 @@ body {
 .mt-5 {
 	margin-top: 50px !important;
 } 
+
+.hidden-lg {
+	@media screen and (min-width: $md) {
+		display: none !important;
+	}
+}
