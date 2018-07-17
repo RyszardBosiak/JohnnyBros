@@ -44,6 +44,7 @@ nav {
 		background: transparent;
 		cursor: pointer;
 		transition-duration: $default-easing-time;
+		z-index: 5;
 
 		&:focus {
 			outline: none;
@@ -85,7 +86,48 @@ nav {
 
 	@media screen and (max-width: $md) {
 		ul {
-			display: none;
+			/* display: none; */
+			width: 50%;
+			/* float: right; */
+			position: fixed;
+			right: 0;
+			top: 0;
+			padding-top: 75px;
+			transform: translateX(100%);
+			transition-duration: $default-easing-time;
+			text-align: left;
+			height: 100%;
+			background-color: $color-secondary;
+			margin-top: 0;
+		}
+
+		li {
+			display: block;
+
+			a {
+				padding-left: 75px;
+				position: relative;
+				&:before {
+					position: absolute;
+					left: -60px;
+					width: 65px;
+					height: 3px;
+					background-color: $color-primary;
+					top: 50%;
+					transform: translateY(-50%);
+					opacity: 0;
+					transition-duration: $default-easing-time;
+				}
+	
+				&.active,
+				&:hover,
+				&:focus {
+					&:before {
+						opacity: 1;
+						left: -40px;
+					}
+				}
+			}
 		}
 
 		a {
@@ -116,6 +158,16 @@ nav {
 			}
 		}
 	}
+
+	ul {
+		transform: translateX(0);
+
+		a {
+			&:before {
+				content: '';
+			}
+		}
+	}
 }
 
 .mobile-menu-background {
@@ -126,4 +178,5 @@ nav {
 	background-color: rgba(#000, .6);
 	z-index: 1;
 	display: none;
+	cursor: pointer;
 }
