@@ -1,10 +1,8 @@
 .content-block {
-	// width: 50%;
-	// top: 0;
-	// left: 0;
-	// background: $color-white;
-	// display: inline-block;
-	// float: left;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	float: left;
 
 	img {
 		width: 100%;
@@ -13,13 +11,34 @@
 }
 
 .text-block {
-  padding: 55px;
+	padding: 50px;
+	width: calc( 45% - 100px);
+	position: relative;
+	z-index: 2;
+	border-radius: $border-radius;
 }
 
+.image-block {
+	width: calc( 55% + 70px);
+	background-image: url(./../../styles/images/pp-foosball-match.jpg);
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-left: -70px;
+	margin-top: 70px;
+	position: relative;
+	z-index: 1;
+}
 
 // to do - add the same padding to all elements
 .statistics-block {
-  padding: 45px;
+	padding: 50px;
+	width: calc(35% - 100px);
+	// outline: 40px solid $color-primary;
+	margin-left: 65px;
+	margin-top: -115px;
+	position: relative;
+	z-index: 1;
 }
 
 .statistics-wrapper {

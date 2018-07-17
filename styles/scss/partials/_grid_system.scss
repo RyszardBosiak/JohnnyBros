@@ -1,9 +1,42 @@
 .container {
   max-width: 1200px;
-  margin: 0 auto;
+	margin: 0 auto;
+	
+	&:after {
+		clear: both;
+    content: "";
+    display: table;
+	}
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.grid-5 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+// .grid-2-1 {
+// 	display: grid;
+//   grid-gap: 10px;
+// 	grid-template-columns: 40% 60%;
+// }
+
+// .text-block {
+// 	grid-row: 1;
+// }
+// .image-block {
+// 	grid-row: 1;
+// }
+// .statistics-block {
+// 	grid-row: 2;
+// }
+
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
 }

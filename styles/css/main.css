@@ -22,9 +22,18 @@ body {
 .mt-5 {
   margin-top: 50px !important; }
 
+.pt-10 {
+  padding-top: 100px; }
+
+.pb-10 {
+  padding-bottom: 100px; }
+
 @media screen and (min-width: 768px) {
   .hidden-lg {
     display: none !important; } }
+
+.element-shadow {
+  box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5); }
 
 .button {
   border: none;
@@ -44,10 +53,22 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+  .container:after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr; }
+
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+
+.flex-container {
+  display: flex;
+  align-items: stretch; }
 
 .scroll-down {
   display: block;
@@ -213,21 +234,55 @@ nav {
   background-color: #F4F4F4; }
 
 .section-white {
-  background-color: #FFF; }
+  background-color: #FFF;
+  position: relative; }
+  .section-white.additional-color-gap:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: -100px;
+    background-color: #FFF; }
 
 .section-green {
   background-color: #3EAD48;
   color: #FFF; }
 
-.content-block img {
-  width: 100%;
-  height: auto; }
+.content-block {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  float: left; }
+  .content-block img {
+    width: 100%;
+    height: auto; }
 
 .text-block {
-  padding: 55px; }
+  padding: 50px;
+  width: calc( 45% - 100px);
+  position: relative;
+  z-index: 2;
+  border-radius: 3px; }
+
+.image-block {
+  width: calc( 55% + 70px);
+  background-image: url(./../../styles/images/pp-foosball-match.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: -70px;
+  margin-top: 70px;
+  position: relative;
+  z-index: 1; }
 
 .statistics-block {
-  padding: 45px; }
+  padding: 50px;
+  width: calc(35% - 100px);
+  margin-left: 65px;
+  margin-top: -115px;
+  position: relative;
+  z-index: 1; }
 
 .statistics-wrapper {
   display: grid;
@@ -235,3 +290,7 @@ nav {
 
 .statistics-item i {
   display: block; }
+
+footer {
+  padding: 40px 15px;
+  background-color: #1E3066; }

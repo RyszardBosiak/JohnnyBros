@@ -4,6 +4,18 @@
 
 .section-white {
 	background-color: $color-white;
+	position: relative;
+	&.additional-color-gap {
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100px;
+			position: absolute;
+			top: -100px;
+			background-color: $color-white;
+		}
+	}
 }
 
 .section-green {
