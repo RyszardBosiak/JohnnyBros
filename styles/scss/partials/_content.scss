@@ -1,0 +1,34 @@
+.content-block {
+	// width: 50%;
+	// top: 0;
+	// left: 0;
+	// background: $color-white;
+	// display: inline-block;
+	// float: left;
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.text-block {
+  padding: 55px;
+}
+
+
+// to do - add the same padding to all elements
+.statistics-block {
+  padding: 45px;
+}
+
+.statistics-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.statistics-item {
+	i {
+		display: block;
+	}
+}

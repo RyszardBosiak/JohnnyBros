@@ -212,6 +212,26 @@ nav {
 .section-light-grey {
   background-color: #F4F4F4; }
 
+.section-white {
+  background-color: #FFF; }
+
+.section-green {
+  background-color: #3EAD48;
+  color: #FFF; }
+
 .content-block img {
   width: 100%;
   height: auto; }
+
+.text-block {
+  padding: 55px; }
+
+.statistics-block {
+  padding: 45px; }
+
+.statistics-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
+
+.statistics-item i {
+  display: block; }
