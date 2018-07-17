@@ -208,3 +208,10 @@ nav {
   z-index: 1;
   display: none;
   cursor: pointer; }
+
+.section-light-grey {
+  background-color: #F4F4F4; }
+
+.content-block img {
+  width: 100%;
+  height: auto; }
