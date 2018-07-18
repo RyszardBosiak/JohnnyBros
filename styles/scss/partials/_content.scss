@@ -33,7 +33,7 @@
 // to do - add the same padding to all elements
 .statistics-block {
 	padding: 50px;
-	width: calc(40% - 100px);
+	width: calc(40% - 75px);
 	// outline: 40px solid $color-primary;
 	margin-left: 65px;
 	margin-top: -115px;
@@ -94,6 +94,5 @@ q {
 		margin: 0;
 		padding: 0;
 		background-image: url(./../../styles/images/pp-office.jpg);
-		background-size: contain;
 	}
 }
