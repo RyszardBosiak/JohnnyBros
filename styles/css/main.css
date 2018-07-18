@@ -43,7 +43,9 @@ body {
   cursor: pointer;
   color: #F4F4F4;
   padding: 15px 28px;
-  transition-duration: 0.3s; }
+  transition-duration: 0.3s;
+  display: inline-block;
+  text-decoration: none; }
 
 .button-primary {
   background-color: #3EAD48; }
@@ -64,15 +66,23 @@ body {
 
 .grid-5 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px; }
 
 .grid-2 {
   display: grid;
+  grid-column-gap: 65px;
   grid-template-columns: 1fr 1fr; }
 
 .flex-container {
   display: flex;
   align-items: stretch; }
+
+.right-lower {
+  width: calc(50% - 35px);
+  padding: 50px 50px 50px 100px;
+  margin-top: 70px;
+  margin-left: -55px; }
 
 .scroll-down {
   display: block;
@@ -294,6 +304,61 @@ nav {
 
 .statistics-item i {
   display: block; }
+
+q {
+  display: block;
+  position: relative; }
+  q:before {
+    font-size: 60px;
+    position: absolute;
+    left: -30px;
+    color: rgba(255, 255, 255, 0.5); }
+
+.avatar {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-column-gap: 15px; }
+  .avatar .image {
+    width: 64px;
+    height: 64px;
+    background-image: url(./../../styles/images/pp-social-proof.png);
+    background-size: contain;
+    background-position: center;
+    border-radius: 50%;
+    background-color: #FFF; }
+  .avatar .name span {
+    display: block; }
+
+.section-contact .image-block {
+  width: 100%;
+  height: 420px;
+  margin: 0;
+  padding: 0;
+  background-image: url(./../../styles/images/pp-office.jpg); }
+
+.award-element span {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto; }
+
+.awards-block div:first-of-type span {
+  background-image: url(./../../styles/images/pp-reward-1.svg); }
+
+.awards-block div:nth-of-type(2) span {
+  background-image: url(./../../styles/images/pp-reward-2.svg); }
+
+.awards-block div:nth-of-type(3) span {
+  background-image: url(./../../styles/images/pp-reward-3.svg); }
+
+.awards-block div:nth-of-type(4) span {
+  background-image: url(./../../styles/images/pp-reward-4.svg); }
+
+.awards-block div:nth-of-type(5) span {
+  background-image: url(./../../styles/images/pp-reward-5.svg); }
 
 footer {
   padding: 40px 15px;

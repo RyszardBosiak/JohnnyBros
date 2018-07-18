@@ -1,0 +1,47 @@
+.award-element {
+  span {
+    background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+    display: block;
+    width: 100px;
+		height: 100px;
+		margin: 0 auto;
+	}
+	
+
+}
+
+.awards-block {
+	div {
+		&:first-of-type {
+			span {
+				background-image: url(./../../styles/images/pp-reward-1.svg);
+			}
+		}
+	
+		&:nth-of-type(2) {
+			span {
+				background-image: url(./../../styles/images/pp-reward-2.svg);	
+			}
+		}
+	
+		&:nth-of-type(3) {
+			span {
+				background-image: url(./../../styles/images/pp-reward-3.svg);	
+			}
+		}
+	
+		&:nth-of-type(4) {
+			span {
+				background-image: url(./../../styles/images/pp-reward-4.svg);				
+			}
+		}
+	
+		&:nth-of-type(5) {
+			span {
+				background-image: url(./../../styles/images/pp-reward-5.svg);				
+			}
+		}
+	}
+}
