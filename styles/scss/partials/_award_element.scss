@@ -9,7 +9,13 @@
 		margin: 0 auto;
 	}
 	
-
+	i {
+		margin: 25px 0 15px;
+		display: block;
+		&:before {
+			content: '\0023'
+		}
+	}
 }
 
 .awards-block {

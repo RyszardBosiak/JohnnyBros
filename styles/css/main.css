@@ -5,6 +5,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'ralewaymedium';
+  src: url("./../fonts/raleway-medium/raleway-medium-webfont.woff2") format("woff2"), url("./../fonts/raleway-medium/raleway-medium-webfont.woff") format("woff"), url("./../fonts/raleway-medium/raleway-medium-webfont.ttf") format("truetype"), url("./../fonts/raleway-medium/raleway-medium-webfont.svg#ralewaymedium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'ralewaybold';
   src: url("./../fonts/raleway-bold/raleway-bold-webfont.woff2") format("woff2"), url("./../fonts/raleway-bold/raleway-bold-webfont.woff") format("woff"), url("./../fonts/raleway-bold/raleway-bold-webfont.ttf") format("truetype"), url("./../fonts/raleway-bold/raleway-bold-webfont.svg#ralewaybold") format("svg");
   font-weight: normal;
@@ -40,6 +46,12 @@ body {
 p.color-white {
   color: #FFF; }
 
+.color-green {
+  color: #3EAD48; }
+
+.color-grey {
+  color: #7E7E7E; }
+
 .mt-5 {
   margin-top: 50px !important; }
 
@@ -62,7 +74,7 @@ p.color-white {
 .element-shadow {
   box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5); }
 
-h1, h2, h3, .h3 {
+h1, h2, .h2, h3, .h3 {
   font-family: "milluniumbold", Arial, Helvetica, sans-serif; }
 
 h1 {
@@ -74,11 +86,11 @@ h1 {
       font-size: 38px;
       line-height: 38px; } }
 
-h2 {
+h2, .h2 {
   font-size: 48px;
   line-height: 56px; }
   @media screen and (max-width: 768px) {
-    h2 {
+    h2, .h2 {
       font-size: 32px;
       line-height: 38px; } }
 
@@ -102,15 +114,23 @@ h4, .h4 {
       font-size: 15px;
       line-height: 20px; } }
 
-p, .p, q, span {
+p, .p, q, span, input, textarea {
   font-size: 15px;
   line-height: 24px;
-  font-family: "ralewayregular", Arial, Helvetica, sans-serif;
-  color: #323232; }
+  font-family: "ralewayregular", Arial, Helvetica, sans-serif; }
   @media screen and (max-width: 768px) {
-    p, .p, q, span {
+    p, .p, q, span, input, textarea {
       font-size: 14px;
       line-height: 22px; } }
+
+p, .p, q, span {
+  color: #323232; }
+
+input, textarea {
+  color: #7E7E7E; }
+
+i {
+  font-style: normal; }
 
 p {
   margin-bottom: 25px; }
@@ -125,10 +145,19 @@ button, .button {
       font-size: 15px;
       line-height: 18px; } }
 
+.bold {
+  font-family: "ralewaybold", Arial, Helvetica, sans-serif; }
+
+.medium {
+  font-family: "ralewaymedium", Arial, Helvetica, sans-serif; }
+
 nav a {
   font-family: "ralewaybold", Arial, Helvetica, sans-serif; }
 
 body {
+  font-family: "ralewayregular", Arial, Helvetica, sans-serif; }
+
+input, textarea {
   font-family: "ralewayregular", Arial, Helvetica, sans-serif; }
 
 .button {
@@ -366,7 +395,7 @@ nav {
 .section-green {
   background-color: #3EAD48;
   color: #FFF; }
-  .section-green p, .section-green span, .section-green q {
+  .section-green * {
     color: #FFF; }
 
 .content-block {
@@ -388,7 +417,7 @@ nav {
 .image-block {
   width: calc( 50% + 70px);
   background-image: url(./../../styles/images/pp-foosball-match.jpg);
-  height: 400px;
+  height: 460px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: -70px;
@@ -397,12 +426,16 @@ nav {
   z-index: 1; }
 
 .statistics-block {
-  padding: 50px;
+  padding: 40px;
   width: calc(40% - 75px);
   margin-left: 65px;
-  margin-top: -115px;
+  margin-top: -125px;
+  margin-bottom: -40px;
   position: relative;
   z-index: 1; }
+  .statistics-block h4 {
+    margin-top: 5px;
+    margin-bottom: 30px; }
 
 .statistics-wrapper {
   display: grid;
@@ -452,6 +485,12 @@ q {
   height: 100px;
   margin: 0 auto; }
 
+.award-element i {
+  margin: 25px 0 15px;
+  display: block; }
+  .award-element i:before {
+    content: '\0023'; }
+
 .awards-block div:first-of-type span {
   background-image: url(./../../styles/images/pp-reward-1.svg); }
 
@@ -475,12 +514,12 @@ footer {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-color: #C2C2C2;
+  border-bottom: 1px solid #C2C2C2;
   padding: 15px 0; }
 
 .contact-form textarea {
   background-color: #F4F4F4;
-  border-color: #C2C2C2;
+  border: 1px solid #C2C2C2;
   padding: 15px 20px;
   border-radius: 3px;
   min-height: 110px;

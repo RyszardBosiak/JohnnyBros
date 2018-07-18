@@ -4,13 +4,13 @@
 		border-top: none;
 		border-right: none;
 		border-left: none;
-		border-color: $color-mid-grey-2;
+		border-bottom: 1px solid $color-mid-grey-2;
 		padding: 15px 0;
 	}
 	
 	textarea {
 		background-color: $color-light-grey;
-		border-color: $color-mid-grey-2;
+		border: 1px solid $color-mid-grey-2;
 		padding: 15px 20px;
 		border-radius: $border-radius;
 		min-height: 110px;

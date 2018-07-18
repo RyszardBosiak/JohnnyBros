@@ -1,4 +1,4 @@
-h1, h2, h3, .h3 {
+h1, h2, .h2, h3, .h3 {
 	font-family: $font-secondary-bold;
 }
 
@@ -13,7 +13,7 @@ h1 {
 	}
 }
 
-h2 {
+h2, .h2 {
 	font-size: 48px;
 	line-height: 56px;
 
@@ -46,15 +46,27 @@ h4, .h4 {
 	}
 }
 
-p, .p, q, span {
+p, .p, q, span, input, textarea {
 	font-size: 15px;
 	line-height: 24px;
 	font-family: $font-primary-regular;
-	color: $color-black;
 	@media screen and (max-width: $md) {
 		font-size: 14px;
 		line-height: 22px;
 	}
+}
+
+p, .p, q, span {
+	color: $color-black;
+}
+
+
+input, textarea {
+	color: $color-grey;
+}
+
+i {
+	font-style: normal;
 }
 
 p {
@@ -72,6 +84,14 @@ button, .button {
 	}
 }
 
+.bold {
+	font-family: $font-primary-bold;
+}
+
+.medium {
+	font-family: $font-primary-medium;
+}
+
 nav {
 	a {
 		font-family: $font-primary-bold;
@@ -80,4 +100,8 @@ nav {
 
 body {
   font-family: $font-primary-regular;
+}
+
+input, textarea {
+	font-family: $font-primary-regular;
 }

@@ -9,6 +9,16 @@
 }
 
 @font-face {
+	font-family: 'ralewaymedium';
+	src: url('./../fonts/raleway-medium/raleway-medium-webfont.woff2') format('woff2'),
+			 url('./../fonts/raleway-medium/raleway-medium-webfont.woff') format('woff'),
+			 url('./../fonts/raleway-medium/raleway-medium-webfont.ttf') format('truetype'),
+			 url('./../fonts/raleway-medium/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: 'ralewaybold';
 	src: url('./../fonts/raleway-bold/raleway-bold-webfont.woff2') format('woff2'),
 			 url('./../fonts/raleway-bold/raleway-bold-webfont.woff') format('woff'),
@@ -30,5 +40,6 @@
 
 $font-fallback: Arial, Helvetica, sans-serif;
 $font-primary-regular: 'ralewayregular', $font-fallback;
+$font-primary-medium: 'ralewaymedium', $font-fallback;
 $font-primary-bold: 'ralewaybold', $font-fallback;
 $font-secondary-bold: 'milluniumbold', $font-fallback;

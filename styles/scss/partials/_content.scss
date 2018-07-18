@@ -21,7 +21,7 @@
 .image-block {
 	width: calc( 50% + 70px);
 	background-image: url(./../../styles/images/pp-foosball-match.jpg);
-	height: 400px;
+	height: 460px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-left: -70px;
@@ -32,13 +32,19 @@
 
 // to do - add the same padding to all elements
 .statistics-block {
-	padding: 50px;
+	padding: 40px;
 	width: calc(40% - 75px);
 	// outline: 40px solid $color-primary;
 	margin-left: 65px;
-	margin-top: -115px;
+	margin-top: -125px;
+	margin-bottom: -40px;
 	position: relative;
 	z-index: 1;
+
+	h4 {
+		margin-top: 5px;
+		margin-bottom: 30px;
+	}
 }
 
 .statistics-wrapper {
