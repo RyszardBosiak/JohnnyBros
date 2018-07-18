@@ -6,12 +6,17 @@ body {
 	text-align: center;
 } 
 
-.color-white {
+.color-white, span.color-white, 
+p.color-white {
 	color: $color-white;
 }
 
 .mt-5 {
 	margin-top: 50px !important;
+} 
+
+.mt-6 {
+	margin-top: 60px !important;
 } 
 
 .pt-10 {

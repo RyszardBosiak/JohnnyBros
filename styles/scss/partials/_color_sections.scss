@@ -21,4 +21,8 @@
 .section-green {
 	background-color: $color-primary;
 	color: $color-white;
+
+	p, span, q  {
+		color: $color-white;
+	}
 }
