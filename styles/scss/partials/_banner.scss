@@ -3,6 +3,14 @@
 	background-image: url(./../../styles/images/pp-main-background.jpg);
 	background-position: center;
 	background-size: cover;
+
+	@media screen and (max-width: $md) {
+		height: 620px;
+	}
+
+	@media screen and (max-width: 480px) {
+		height: 500px;
+	}
 }  
 
 .banner-content {

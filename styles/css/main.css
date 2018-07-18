@@ -27,6 +27,12 @@
   background-image: url(./../../styles/images/pp-main-background.jpg);
   background-position: center;
   background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 620px; } }
+  @media screen and (max-width: 480px) {
+    .banner {
+      height: 500px; } }
 
 .banner-content {
   top: 50%;
