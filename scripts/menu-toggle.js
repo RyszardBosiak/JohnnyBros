@@ -2,7 +2,6 @@
 
 $(document).ready(function () {
 	const menuOpener = $('.menu-opener');
-	const navigationWrapper = $('.navigation-wrapper');
 	const body = $('body');
 	const menuBackground = $('.mobile-menu-background');
 	const mobileWidth = 768;

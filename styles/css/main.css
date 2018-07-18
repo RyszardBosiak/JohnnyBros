@@ -126,7 +126,8 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 2; }
+  z-index: 2;
+  transition-duration: 0.3s; }
   nav a {
     color: #FFF;
     text-transform: uppercase;
@@ -220,6 +221,8 @@ nav {
           left: -40px; }
     nav a.logo {
       width: 36px; } }
+  nav.nav-dark {
+    background-color: #1E3066; }
 
 .show-menu {
   overflow: hidden;
