@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'ralewayregular';
+  src: url("./../fonts/raleway-regular/raleway-regular-webfont.woff2") format("woff2"), url("./../fonts/raleway-regular/raleway-regular-webfont.woff") format("woff"), url("./../fonts/raleway-regular/raleway-regular-webfont.ttf") format("truetype"), url("./../fonts/raleway-regular/raleway-regular-webfont.svg#ralewayregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ralewaybold';
+  src: url("./../fonts/raleway-bold/raleway-bold-webfont.woff2") format("woff2"), url("./../fonts/raleway-bold/raleway-bold-webfont.woff") format("woff"), url("./../fonts/raleway-bold/raleway-bold-webfont.ttf") format("truetype"), url("./../fonts/raleway-bold/raleway-bold-webfont.svg#ralewaybold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'milluniumbold';
+  src: url("./../fonts/millunium-bold/millunium-bold-webfont.woff2") format("woff2"), url("./../fonts/millunium-bold/millunium-bold-webfont.woff") format("woff"), url("./../fonts/millunium-bold/millunium-bold-webfont.ttf") format("truetype"), url("./../fonts/millunium-bold/millunium-bold-webfont.svg#milluniumbold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .banner {
   height: 720px;
   background-image: url(./../../styles/images/pp-main-background.jpg);
@@ -37,6 +55,18 @@ body {
 
 .element-shadow {
   box-shadow: 0px 0px 7px 0px rgba(50, 50, 50, 0.5); }
+
+h1 {
+  font-size: 64px;
+  line-height: 64px;
+  font-family: "milluniumbold", Arial, Helvetica, sans-serif; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 38px;
+      line-height: 38px; } }
+
+body {
+  font-family: "ralewayregular", Arial, Helvetica, sans-serif; }
 
 .button {
   border: none;

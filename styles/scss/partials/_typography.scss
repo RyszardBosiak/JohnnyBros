@@ -1,6 +1,13 @@
-// h1 {
+h1 {
+	font-size: 64px;
+	line-height: 64px;
+	font-family: $font-secondary-bold;
 
-// }
+	@media screen and (max-width: $md) {
+		font-size: 38px;
+		line-height: 38px;
+	}
+}
 
 // h2 {
 
@@ -9,3 +16,7 @@
 // h3 {
 
 // }
+
+body {
+  font-family: $font-primary-regular;
+}

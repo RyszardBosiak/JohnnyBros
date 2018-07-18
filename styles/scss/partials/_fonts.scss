@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'ralewayregular';
+	src: url('./../fonts/raleway-regular/raleway-regular-webfont.woff2') format('woff2'),
+			 url('./../fonts/raleway-regular/raleway-regular-webfont.woff') format('woff'),
+			 url('./../fonts/raleway-regular/raleway-regular-webfont.ttf') format('truetype'),
+			 url('./../fonts/raleway-regular/raleway-regular-webfont.svg#ralewayregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ralewaybold';
+	src: url('./../fonts/raleway-bold/raleway-bold-webfont.woff2') format('woff2'),
+			 url('./../fonts/raleway-bold/raleway-bold-webfont.woff') format('woff'),
+			 url('./../fonts/raleway-bold/raleway-bold-webfont.ttf') format('truetype'),
+			 url('./../fonts/raleway-bold/raleway-bold-webfont.svg#ralewaybold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'milluniumbold';
+	src: url('./../fonts/millunium-bold/millunium-bold-webfont.woff2') format('woff2'),
+			 url('./../fonts/millunium-bold/millunium-bold-webfont.woff') format('woff'),
+			 url('./../fonts/millunium-bold/millunium-bold-webfont.ttf') format('truetype'),
+			 url('./../fonts/millunium-bold/millunium-bold-webfont.svg#milluniumbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+$font-fallback: Arial, Helvetica, sans-serif;
+$font-primary-regular: 'ralewayregular', $font-fallback;
+$font-primary-bold: 'ralewaybold', $font-fallback;
+$font-secondary-bold: 'milluniumbold', $font-fallback;
