@@ -23,6 +23,12 @@
 .grid-2 {
 	display: grid;
 	grid-column-gap: 65px;
+	grid-template-columns: 4fr 6fr;
+}
+
+.grid-50 {
+	display: grid;
+	grid-column-gap: 15px;
 	grid-template-columns: 1fr 1fr;
 }
 
@@ -32,8 +38,8 @@
 }
 
 .right-lower {
-	width: calc(50% - 35px);
-	padding: 50px 50px 50px 100px;
+	width: calc(45% - 55px);
+	padding: 50px 50px 50px 120px;
 	margin-top: 70px;
 	margin-left: -55px;
 }

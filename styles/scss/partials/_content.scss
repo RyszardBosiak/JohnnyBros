@@ -12,14 +12,14 @@
 
 .text-block {
 	padding: 50px;
-	width: calc( 45% - 100px);
+	width: calc( 50% - 100px);
 	position: relative;
 	z-index: 2;
 	border-radius: $border-radius;
 }
 
 .image-block {
-	width: calc( 55% + 70px);
+	width: calc( 50% + 70px);
 	background-image: url(./../../styles/images/pp-foosball-match.jpg);
 	height: 400px;
 	background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 // to do - add the same padding to all elements
 .statistics-block {
 	padding: 50px;
-	width: calc(35% - 100px);
+	width: calc(40% - 100px);
 	// outline: 40px solid $color-primary;
 	margin-left: 65px;
 	margin-top: -115px;
@@ -57,9 +57,10 @@ q {
 	position: relative;
 
 	&:before {
-		font-size: 60px;
+    font-size: 60px;
     position: absolute;
-		left: -30px;
+    left: -40px;
+    top: -10px;
 		color: rgba($color-white, 0.5);
 	}
 }
@@ -93,5 +94,6 @@ q {
 		margin: 0;
 		padding: 0;
 		background-image: url(./../../styles/images/pp-office.jpg);
+		background-size: contain;
 	}
 }

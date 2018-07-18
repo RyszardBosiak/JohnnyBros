@@ -28,6 +28,9 @@ body {
 .pb-10 {
   padding-bottom: 100px; }
 
+.mb-2-5 {
+  margin-bottom: 25px; }
+
 @media screen and (min-width: 768px) {
   .hidden-lg {
     display: none !important; } }
@@ -42,7 +45,7 @@ body {
   line-height: 19px;
   cursor: pointer;
   color: #F4F4F4;
-  padding: 15px 28px;
+  padding: 15px 90px;
   transition-duration: 0.3s;
   display: inline-block;
   text-decoration: none; }
@@ -72,6 +75,11 @@ body {
 .grid-2 {
   display: grid;
   grid-column-gap: 65px;
+  grid-template-columns: 4fr 6fr; }
+
+.grid-50 {
+  display: grid;
+  grid-column-gap: 15px;
   grid-template-columns: 1fr 1fr; }
 
 .flex-container {
@@ -79,8 +87,8 @@ body {
   align-items: stretch; }
 
 .right-lower {
-  width: calc(50% - 35px);
-  padding: 50px 50px 50px 100px;
+  width: calc(45% - 55px);
+  padding: 50px 50px 50px 120px;
   margin-top: 70px;
   margin-left: -55px; }
 
@@ -274,13 +282,13 @@ nav {
 
 .text-block {
   padding: 50px;
-  width: calc( 45% - 100px);
+  width: calc( 50% - 100px);
   position: relative;
   z-index: 2;
   border-radius: 3px; }
 
 .image-block {
-  width: calc( 55% + 70px);
+  width: calc( 50% + 70px);
   background-image: url(./../../styles/images/pp-foosball-match.jpg);
   height: 400px;
   background-repeat: no-repeat;
@@ -292,7 +300,7 @@ nav {
 
 .statistics-block {
   padding: 50px;
-  width: calc(35% - 100px);
+  width: calc(40% - 100px);
   margin-left: 65px;
   margin-top: -115px;
   position: relative;
@@ -311,7 +319,8 @@ q {
   q:before {
     font-size: 60px;
     position: absolute;
-    left: -30px;
+    left: -40px;
+    top: -10px;
     color: rgba(255, 255, 255, 0.5); }
 
 .avatar {
@@ -334,7 +343,8 @@ q {
   height: 420px;
   margin: 0;
   padding: 0;
-  background-image: url(./../../styles/images/pp-office.jpg); }
+  background-image: url(./../../styles/images/pp-office.jpg);
+  background-size: contain; }
 
 .award-element span {
   background-position: center;
@@ -364,5 +374,19 @@ footer {
   padding: 40px 15px;
   background-color: #1E3066; }
 
-.contact-form {
-  display: grid; }
+.contact-form input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-color: #C2C2C2;
+  padding: 15px 0; }
+
+.contact-form textarea {
+  background-color: #F4F4F4;
+  border-color: #C2C2C2;
+  padding: 15px 20px;
+  border-radius: 3px;
+  min-height: 110px;
+  width: 100%;
+  box-sizing: border-box;
+  display: block; }
