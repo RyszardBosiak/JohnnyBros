@@ -39,6 +39,9 @@
           margin-bottom: 25px; }
         .banner .banner-content h1 {
           margin-bottom: 15px; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .banner .banner-content p {
+      margin-bottom: 30px; } }
 
 .banner-content {
   top: 58%;
@@ -79,7 +82,7 @@ p.color-white {
 .mb-2-5 {
   margin-bottom: 25px; }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .hidden-lg {
     display: none !important; } }
 
@@ -96,7 +99,7 @@ h1 {
   font-size: 64px;
   line-height: 64px;
   margin: 15px 0 35px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     h1 {
       font-size: 38px;
       line-height: 38px; } }
@@ -104,7 +107,7 @@ h1 {
 h2, .h2 {
   font-size: 48px;
   line-height: 56px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     h2, .h2 {
       font-size: 32px;
       line-height: 38px; } }
@@ -113,7 +116,7 @@ h3, .h3 {
   font-size: 32px;
   line-height: 38px;
   margin: 10px 0; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     h3, .h3 {
       font-size: 24px;
       line-height: 28px; } }
@@ -124,7 +127,7 @@ h4, .h4 {
   text-transform: uppercase;
   font-family: "ralewaybold", Arial, Helvetica, sans-serif;
   color: #7E7E7E; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     h4, .h4 {
       font-size: 15px;
       line-height: 20px; } }
@@ -133,7 +136,7 @@ p, .p, q, span, input, textarea {
   font-size: 15px;
   line-height: 24px;
   font-family: "ralewayregular", Arial, Helvetica, sans-serif; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     p, .p, q, span, input, textarea {
       font-size: 14px;
       line-height: 22px; } }
@@ -155,7 +158,7 @@ button, .button {
   line-height: 19px;
   font-family: "ralewaybold", Arial, Helvetica, sans-serif;
   color: #323232; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     button, .button {
       font-size: 15px;
       line-height: 18px; } }
@@ -263,6 +266,9 @@ input, textarea {
   @media screen and (max-width: 480px) {
     .scroll-down {
       margin-top: 20px; } }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .scroll-down {
+      margin-top: 35px; } }
 
 nav {
   position: fixed;

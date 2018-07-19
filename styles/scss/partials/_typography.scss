@@ -7,7 +7,7 @@ h1 {
 	line-height: 64px;
 	margin: 15px 0 35px;
 
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 38px;
 		line-height: 38px;
 	}
@@ -17,7 +17,7 @@ h2, .h2 {
 	font-size: 48px;
 	line-height: 56px;
 
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 32px;
 		line-height: 38px;
 	}
@@ -28,7 +28,7 @@ h3, .h3 {
 	line-height: 38px;
 	margin: 10px 0;
 
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 24px;
 		line-height: 28px;
 	}
@@ -40,7 +40,7 @@ h4, .h4 {
 	text-transform: uppercase;
 	font-family: $font-primary-bold;
 	color: $color-grey;
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 15px;
 		line-height: 20px;
 	}
@@ -50,7 +50,7 @@ p, .p, q, span, input, textarea {
 	font-size: 15px;
 	line-height: 24px;
 	font-family: $font-primary-regular;
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 14px;
 		line-height: 22px;
 	}
@@ -78,7 +78,7 @@ button, .button {
 	line-height: 19px;
 	font-family: $font-primary-bold;
 	color: $color-black;
-	@media screen and (max-width: $md) {
+	@media screen and (max-width: $sm) {
 		font-size: 15px;
 		line-height: 18px;
 	}

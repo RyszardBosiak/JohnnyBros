@@ -10,7 +10,7 @@
   display: inline-block;
   text-decoration: none;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $sm) {
     padding: 15px 55px;
   }
 }

@@ -40,7 +40,7 @@ p.color-white {
 }
 
 .hidden-lg {
-	@media screen and (min-width: $md) {
+	@media screen and (min-width: $md + 1) {
 		display: none !important;
 	}
 }

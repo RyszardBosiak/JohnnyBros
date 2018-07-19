@@ -34,7 +34,11 @@
 		}
   }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $sm) {
     margin-top: 20px;
+  }
+
+  @media screen and (min-width: $sm + 1) and (max-width: $md) {
+    margin-top: 35px;
   }
 }
