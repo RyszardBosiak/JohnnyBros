@@ -19,6 +19,10 @@ p.color-white {
 	color: $color-grey;
 }
 
+.mt-3 {
+	margin-top: 30px;
+}
+
 .mt-5 {
 	margin-top: 50px !important;
 } 
@@ -41,6 +45,30 @@ p.color-white {
 
 .pt-5 {
 	padding-top: 50px;
+}
+
+.pt-0-mobile {
+	@media screen and(max-width: $sm) {
+		padding-top: 0;
+	}
+}
+
+.pt-20-tablet {
+	@media screen and (min-width: $sm + 1) and (max-width: $md) {
+		padding-top: 200px;
+	}
+}
+
+.pb-0-mobile {
+	@media screen and(max-width: $sm) {
+		padding-bottom: 0;	
+	}
+}
+
+.pb-0-mobile-tablet {
+	@media screen and(max-width: $md) {
+		padding-bottom: 0;	
+	}
 }
 
 .mb-2-5 {

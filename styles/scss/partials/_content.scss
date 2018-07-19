@@ -14,10 +14,6 @@
 	position: relative;
 	z-index: 2;
 	border-radius: $border-radius;
-
-	@media screen and (min-width: $sm + 1) and (max-width: $md) {
-		// width: 50%;
-	}
 }
 
 .image-block {
@@ -26,7 +22,6 @@
 	background-image: url(./../../styles/images/pp-foosball-match.jpg);
 }
 
-// to do - add the same padding to all elements
 .statistics-block {
 	h4 {
 		margin-top: 5px;

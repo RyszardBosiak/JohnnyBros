@@ -9,18 +9,26 @@
 	}
 }
 
+@media screen and (min-width: $md + 1) and (max-width: $lg) {
+	[class^="grid"] {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
-.grid-5 {
+.grid-5-parts {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-column-gap: 60px;
 	
 	@media screen and (min-width: $sm + 1) and (max-width: $md) {
 		grid-template-columns: 1fr 1fr 1fr;
+		padding: 0 15px;
 		div {
 			&:nth-of-type(4),
 			&:last-of-type {
@@ -43,7 +51,7 @@
 	}
 }
 
-.grid-2 {
+.grid-2-parts {
 	display: grid;
 	grid-column-gap: 65px;
 	grid-template-columns: 5fr 6fr;
@@ -76,7 +84,7 @@
 	}
 }
 
-.grid-50 {
+.grid-half-half{
 	display: grid;
 	grid-column-gap: 15px;
 	grid-template-columns: 1fr 1fr;
@@ -86,12 +94,7 @@
 	}
 }
 
-.flex-container {
-  display: flex;
-  align-items: stretch;
-}
-
-.tiles-3-grid-wrapper {
+.grid-3-tiles {
 	display: grid;
 	grid-template-columns: 3fr 4fr;
 
@@ -156,6 +159,9 @@
 				margin-top: -60px;
 				margin-left: 0;
 				grid-row: 2;
+				margin-bottom: -150px;
+				position: relative;
+				z-index: 1;
 				>div {
 					padding: 100px 40px 40px 80px;
 				}
