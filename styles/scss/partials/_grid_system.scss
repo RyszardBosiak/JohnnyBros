@@ -37,9 +37,45 @@
   align-items: stretch;
 }
 
-.right-lower {
-	width: calc(45% - 55px);
-	padding: 50px 50px 50px 120px;
-	margin-top: 70px;
-	margin-left: -55px;
+
+
+.tiles-3-grid-wrapper {
+	display: grid;
+	grid-template-columns: 3fr 4fr;
+
+	.text-block {
+		width: 100%;
+		padding: 50px;
+		margin-bottom: 50px;
+	}
+
+	.image-block {
+		width: 100%;
+    
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+		margin-bottom: -70px;
+		margin-left: 0;
+    position: relative;
+    z-index: 1;
+	}
+
+	.statistics-block {
+		padding: 40px;
+    width: 85%;
+    margin-left: 65px;
+		margin-top: -50px;
+		margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+	}
+
+	.quote-block {
+		padding: 50px 50px 50px 120px;
+		margin-top: 70px;
+		margin-left: 50px;
+		margin-bottom: 50px;
+	}
 }

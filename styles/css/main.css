@@ -76,11 +76,20 @@ p.color-white {
 .pt-10 {
   padding-top: 100px; }
 
+.pb-5 {
+  padding-bottom: 50px; }
+
 .pb-10 {
   padding-bottom: 100px; }
 
+.pt-5 {
+  padding-top: 50px; }
+
 .mb-2-5 {
   margin-bottom: 25px; }
+
+.mb-10 {
+  margin-bottom: 100px !important; }
 
 @media screen and (min-width: 769px) {
   .hidden-lg {
@@ -229,11 +238,36 @@ input, textarea {
   display: flex;
   align-items: stretch; }
 
-.right-lower {
-  width: calc(45% - 55px);
-  padding: 50px 50px 50px 120px;
-  margin-top: 70px;
-  margin-left: -55px; }
+.tiles-3-grid-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 4fr; }
+  .tiles-3-grid-wrapper .text-block {
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 50px; }
+  .tiles-3-grid-wrapper .image-block {
+    width: 100%;
+    height: 460px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+    margin-bottom: -70px;
+    margin-left: 0;
+    position: relative;
+    z-index: 1; }
+  .tiles-3-grid-wrapper .statistics-block {
+    padding: 40px;
+    width: 85%;
+    margin-left: 65px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1; }
+  .tiles-3-grid-wrapper .quote-block {
+    padding: 50px 50px 50px 120px;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-bottom: 50px; }
 
 .scroll-down {
   display: block;
@@ -275,7 +309,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   transition-duration: 0.3s; }
   nav a {
     color: #FFF;
@@ -337,9 +371,7 @@ nav {
       margin-left: 15px; } }
   @media screen and (max-width: 768px) {
     nav ul {
-      /* display: none; */
       width: 65%;
-      /* float: right; */
       position: fixed;
       right: 0;
       top: 0;
@@ -435,34 +467,21 @@ nav {
     height: auto; }
 
 .text-block {
-  padding: 50px;
-  width: calc( 50% - 100px);
   position: relative;
   z-index: 2;
   border-radius: 3px; }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .text-block {
+      width: 50%; } }
 
 .image-block {
-  width: calc( 50% + 70px);
-  background-image: url(./../../styles/images/pp-foosball-match.jpg);
-  height: 460px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: -70px;
-  margin-top: 70px;
-  position: relative;
-  z-index: 1; }
+  background-image: url(./../../styles/images/pp-foosball-match.jpg); }
 
-.statistics-block {
-  padding: 40px;
-  width: calc(40% - 75px);
-  margin-left: 65px;
-  margin-top: -125px;
-  margin-bottom: -40px;
-  position: relative;
-  z-index: 1; }
-  .statistics-block h4 {
-    margin-top: 5px;
-    margin-bottom: 30px; }
+.statistics-block h4 {
+  margin-top: 5px;
+  margin-bottom: 30px; }
 
 .statistics-wrapper {
   display: grid;

@@ -3,7 +3,7 @@ nav {
   left: 0;
   right: 0;
 	top: 0;
-	z-index: 2;
+	z-index: 5;
 	transition-duration: $default-easing-time;
 
   a {
@@ -99,9 +99,7 @@ nav {
 
 	@media screen and (max-width: $md) {
 		ul {
-			/* display: none; */
 			width: 65%;
-			/* float: right; */
 			position: fixed;
 			right: 0;
 			top: 0;
