@@ -240,11 +240,28 @@ input, textarea {
   display: grid;
   grid-column-gap: 65px;
   grid-template-columns: 5fr 6fr; }
+  @media screen and (max-width: 768px) {
+    .grid-2 {
+      grid-template-columns: 1fr; }
+      .grid-2 div.image-block {
+        margin: 0 15px;
+        width: calc(100% - 30px); }
+      .grid-2 .contact-form > div {
+        margin: 0 50px; } }
+  @media screen and (max-width: 520px) {
+    .grid-2 div.image-block {
+      width: 100%;
+      margin: 0; }
+    .grid-2 .contact-form > div {
+      margin: 0 15px; } }
 
 .grid-50 {
   display: grid;
   grid-column-gap: 15px;
   grid-template-columns: 1fr 1fr; }
+  @media screen and (max-width: 520px) {
+    .grid-50 {
+      grid-template-columns: 1fr; } }
 
 .flex-container {
   display: flex;
@@ -313,8 +330,10 @@ input, textarea {
         width: calc(100% - 30px); }
         .tiles-3-grid-wrapper.bottom-section .text-block div {
           padding: 40px 20px; }
-      .tiles-3-grid-wrapper.bottom-section .quote-block > div {
-        padding: 40px 15px; }
+      .tiles-3-grid-wrapper.bottom-section .quote-block {
+        margin-top: -40px; }
+        .tiles-3-grid-wrapper.bottom-section .quote-block > div {
+          padding: 80px 15px 40px; }
       .tiles-3-grid-wrapper.bottom-section q:before {
         top: 40px;
         right: 20px;
