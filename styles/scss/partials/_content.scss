@@ -44,12 +44,19 @@ q {
 	display: block;
 	position: relative;
 
-	&:before {
-    font-size: 60px;
+	&:after {
+    font-size: 100px;
     position: absolute;
     left: -40px;
-    top: -10px;
+    top: 32px;
 		color: rgba($color-white, 0.5);
+
+		@media screen and (max-width: $sm) {
+			top: 29px;
+			right: 20px;
+			left: inherit;
+			font-size: 140px;
+		}
 	}
 }
 

@@ -81,11 +81,11 @@ i.color-grey {
 .pt-10 {
   padding-top: 100px; }
 
-.pb-5 {
-  padding-bottom: 50px; }
+.mb-2-5 {
+  margin-bottom: 25px; }
 
-.pb-10 {
-  padding-bottom: 100px; }
+.mb-10 {
+  margin-bottom: 100px !important; }
 
 .pt-5 {
   padding-top: 50px; }
@@ -106,6 +106,12 @@ i.color-grey {
   .pt-22-tablet {
     padding-top: 220px; } }
 
+.pb-5 {
+  padding-bottom: 50px; }
+
+.pb-10 {
+  padding-bottom: 100px; }
+
 @media screen and (max-width: 560px) {
   .pb-0-mobile {
     padding-bottom: 0; } }
@@ -121,12 +127,6 @@ i.color-grey {
 @media screen and (min-width: 561px) and (max-width: 768px) {
   .pb-7-tablet {
     padding-bottom: 70px; } }
-
-.mb-2-5 {
-  margin-bottom: 25px; }
-
-.mb-10 {
-  margin-bottom: 100px !important; }
 
 @media screen and (min-width: 769px) {
   .hidden-lg {
@@ -375,12 +375,7 @@ input, textarea {
       .grid-3-tiles.bottom-section .quote-block {
         margin-top: -40px; }
         .grid-3-tiles.bottom-section .quote-block > div {
-          padding: 80px 15px 40px; }
-      .grid-3-tiles.bottom-section q:before {
-        top: 40px;
-        right: 20px;
-        left: inherit;
-        font-size: 100px; } }
+          padding: 80px 15px 40px; } }
 
 @media screen and (min-width: 561px) and (max-width: 768px) {
   .grid-column-change-order {
@@ -468,7 +463,7 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  z-index: 5;
+  z-index: 7;
   transition-duration: 0.3s; }
   nav a {
     color: #FFF;
@@ -479,16 +474,10 @@ nav {
     transition-duration: 0.3s; }
     nav a:hover, nav a:focus, nav a:active {
       color: #3EAD48; }
-    nav a.logo {
-      display: block;
-      margin: 15px 15px 15px 0;
-      width: 159px;
-      height: 36px;
-      background-image: url(./../../styles/images/jb-logo.svg);
-      background-repeat: no-repeat; }
   nav ul {
     padding-left: 0;
-    text-align: right; }
+    text-align: right;
+    transition-duration: 0.3s; }
   nav li {
     list-style-type: none;
     display: inline;
@@ -528,9 +517,14 @@ nav {
         top: 17px; }
       nav .menu-opener span:last-of-type {
         top: 27px; }
-  @media screen and (max-width: 1280px) {
-    nav a.logo {
-      margin-left: 15px; } }
+  nav.nav-dark ul {
+    margin-top: 11px;
+    margin-bottom: 11px; }
+    @media screen and (max-width: 768px) {
+      nav.nav-dark ul {
+        margin-top: 0; } }
+  nav.nav-dark button {
+    top: 10px; }
   @media screen and (max-width: 768px) {
     nav ul {
       width: 65%;
@@ -563,9 +557,7 @@ nav {
           transition-duration: 0.3s; }
         nav li a.active:before, nav li a:hover:before, nav li a:focus:before {
           opacity: 1;
-          left: -40px; }
-    nav a.logo {
-      width: 36px; } }
+          left: -40px; } }
   @media screen and (min-width: 769px) and (max-width: 1280px) {
     nav ul {
       padding-right: 15px; } }
@@ -573,8 +565,31 @@ nav {
     nav ul {
       width: 90%;
       padding-top: 75px; } }
-  nav.nav-dark {
-    background-color: #1E3066; }
+
+.nav-logo-box {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  height: 66px;
+  background-color: transparent;
+  transition-duration: 0.3s; }
+  .nav-logo-box.nav-dark {
+    background-color: #1E3066;
+    height: 55px; }
+    .nav-logo-box.nav-dark .logo {
+      margin: 10px 15px; }
+  .nav-logo-box .logo {
+    display: block;
+    margin: 15px;
+    width: 159px;
+    height: 36px;
+    background-image: url(./../../styles/images/jb-logo.svg);
+    background-repeat: no-repeat;
+    transition-duration: 0.3s; }
+    @media screen and (max-width: 768px) {
+      .nav-logo-box .logo {
+        width: 36px; } }
 
 .show-menu {
   overflow: hidden;
@@ -603,7 +618,7 @@ nav {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 4;
+  z-index: 6;
   display: none;
   cursor: pointer; }
 
@@ -665,12 +680,18 @@ nav {
 q {
   display: block;
   position: relative; }
-  q:before {
-    font-size: 60px;
+  q:after {
+    font-size: 100px;
     position: absolute;
     left: -40px;
-    top: -10px;
+    top: 32px;
     color: rgba(255, 255, 255, 0.5); }
+    @media screen and (max-width: 560px) {
+      q:after {
+        top: 29px;
+        right: 20px;
+        left: inherit;
+        font-size: 140px; } }
 
 .avatar {
   display: grid;

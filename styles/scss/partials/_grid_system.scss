@@ -167,7 +167,7 @@
 			}
 		}
 
-		@media screen and(max-width: $sm) {
+		@media screen and (max-width: $sm) {
 			grid-template-columns: 1fr;
 
 			> div {
@@ -188,15 +188,6 @@
 				margin-top: -40px;
 				> div {
 					padding: 80px 15px 40px;
-				}
-			}
-
-			q {
-				&:before {
-					top: 40px;
-					right: 20px;
-					left: inherit;
-					font-size: 100px;
 				}
 			}
 		}

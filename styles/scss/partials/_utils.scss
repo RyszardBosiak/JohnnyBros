@@ -37,12 +37,12 @@ i.color-grey {
 	padding-top: 100px;
 }
 
-.pb-5 {
-	padding-bottom: 50px;
+.mb-2-5 {
+	margin-bottom: 25px;
 }
 
-.pb-10 {
-	padding-bottom: 100px;
+.mb-10 {
+	margin-bottom: 100px !important;
 }
 
 .pt-5 {
@@ -61,7 +61,6 @@ i.color-grey {
 	}
 }
 
-
 .pt-7-tablet {
 	@media screen and (min-width: $sm + 1) and (max-width: $md) {
 		padding-top: 70px;
@@ -72,6 +71,14 @@ i.color-grey {
 	@media screen and (min-width: $sm + 1) and (max-width: $md) {
 		padding-top: 220px;
 	}
+}
+
+.pb-5 {
+	padding-bottom: 50px;
+}
+
+.pb-10 {
+	padding-bottom: 100px;
 }
 
 .pb-0-mobile {
@@ -96,14 +103,6 @@ i.color-grey {
 	@media screen and (min-width: $sm + 1) and (max-width: $md) {
 		padding-bottom: 70px;
 	}
-}
-
-.mb-2-5 {
-	margin-bottom: 25px;
-}
-
-.mb-10 {
-	margin-bottom: 100px !important;
 }
 
 .hidden-lg {
