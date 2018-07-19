@@ -11,11 +11,13 @@ p.color-white {
 	color: $color-white;
 }
 
+i.color-green,
 .color-green {
 	color: $color-primary;
 }
 
-.color-grey {
+.color-grey,
+i.color-grey {
 	color: $color-grey;
 }
 
@@ -53,9 +55,22 @@ p.color-white {
 	}
 }
 
-.pt-20-tablet {
+.pt-5-mobile {
+	@media screen and(max-width: $sm) {
+		padding-top: 50px;
+	}
+}
+
+
+.pt-7-tablet {
 	@media screen and (min-width: $sm + 1) and (max-width: $md) {
-		padding-top: 200px;
+		padding-top: 70px;
+	}
+}
+
+.pt-22-tablet {
+	@media screen and (min-width: $sm + 1) and (max-width: $md) {
+		padding-top: 220px;
 	}
 }
 
@@ -65,9 +80,21 @@ p.color-white {
 	}
 }
 
+.pb-4-mobile {
+	@media screen and(max-width: $sm) {
+		padding-bottom: 40px;	
+	}
+}
+
 .pb-0-mobile-tablet {
 	@media screen and(max-width: $md) {
 		padding-bottom: 0;	
+	}
+}
+
+.pb-7-tablet {
+	@media screen and (min-width: $sm + 1) and (max-width: $md) {
+		padding-bottom: 70px;
 	}
 }
 

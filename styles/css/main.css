@@ -61,10 +61,12 @@ body {
 p.color-white {
   color: #FFF; }
 
+i.color-green,
 .color-green {
   color: #3EAD48; }
 
-.color-grey {
+.color-grey,
+i.color-grey {
   color: #7E7E7E; }
 
 .mt-3 {
@@ -92,17 +94,33 @@ p.color-white {
   .pt-0-mobile {
     padding-top: 0; } }
 
+@media screen and (max-width: 560px) {
+  .pt-5-mobile {
+    padding-top: 50px; } }
+
 @media screen and (min-width: 561px) and (max-width: 768px) {
-  .pt-20-tablet {
-    padding-top: 200px; } }
+  .pt-7-tablet {
+    padding-top: 70px; } }
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+  .pt-22-tablet {
+    padding-top: 220px; } }
 
 @media screen and (max-width: 560px) {
   .pb-0-mobile {
     padding-bottom: 0; } }
 
+@media screen and (max-width: 560px) {
+  .pb-4-mobile {
+    padding-bottom: 40px; } }
+
 @media screen and (max-width: 768px) {
   .pb-0-mobile-tablet {
     padding-bottom: 0; } }
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+  .pb-7-tablet {
+    padding-bottom: 70px; } }
 
 .mb-2-5 {
   margin-bottom: 25px; }
@@ -134,7 +152,8 @@ h1 {
 
 h2, .h2 {
   font-size: 48px;
-  line-height: 56px; }
+  line-height: 56px;
+  color: #323232; }
 
 h3, .h3 {
   font-size: 32px;
@@ -234,13 +253,13 @@ input, textarea {
     display: table; }
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
-  [class^="grid"] {
+  [class^="grid"]:not(.grid-half-half) {
     padding-left: 15px;
     padding-right: 15px; } }
 
-.grid-container {
+.grid-nav {
   display: grid;
-  grid-template-columns: 1fr 2fr; }
+  grid-template-columns: 1fr 3fr; }
 
 .grid-5-parts {
   display: grid;
@@ -311,7 +330,7 @@ input, textarea {
     margin-top: -50px;
     margin-bottom: -50px;
     position: relative;
-    z-index: 1; }
+    z-index: 2; }
   .grid-3-tiles .quote-block {
     padding: 50px 50px 50px 120px;
     margin-top: 70px;
@@ -366,7 +385,7 @@ input, textarea {
 @media screen and (min-width: 561px) and (max-width: 768px) {
   .grid-column-change-order {
     grid-template-columns: 6fr 3fr;
-    padding: 15px; }
+    padding: 0 15px; }
     .grid-column-change-order div.statistics-block {
       order: 2;
       margin: 70px 0 0 30px;
@@ -602,6 +621,10 @@ nav {
     position: absolute;
     top: -100px;
     background-color: #FFF; }
+    @media screen and (min-width: 561px) and (max-width: 768px) {
+      .section-white.additional-color-gap:before {
+        height: 50px;
+        top: -50px; } }
 
 .section-green {
   background-color: #3EAD48;
@@ -620,7 +643,7 @@ nav {
 
 .text-block {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   border-radius: 3px; }
 
 .image-block {
