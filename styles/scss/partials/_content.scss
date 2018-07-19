@@ -91,6 +91,13 @@ q {
 			display: block;
 		}
 	}
+
+	.name-details {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+	}
 }
 
 .section-contact {

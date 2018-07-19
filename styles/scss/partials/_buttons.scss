@@ -9,6 +9,10 @@
   transition-duration: $default-easing-time;
   display: inline-block;
   text-decoration: none;
+
+  @media screen and (max-width: 480px) {
+    padding: 15px 55px;
+  }
 }
 
 .button-primary {
