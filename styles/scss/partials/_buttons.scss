@@ -12,6 +12,9 @@
 
   @media screen and (max-width: $sm) {
     padding: 15px 55px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
   }
 }
 

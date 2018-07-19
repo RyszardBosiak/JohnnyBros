@@ -200,7 +200,10 @@ input, textarea {
   text-decoration: none; }
   @media screen and (max-width: 520px) {
     .button {
-      padding: 15px 55px; } }
+      padding: 15px 55px;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center; } }
 
 .button-primary {
   background-color: #3EAD48; }
