@@ -36,6 +36,10 @@
 			}
 		}
 	}
+
+	@media screen and(max-width: $sm) {
+		grid-template-columns: 1fr;
+	}
 }
 
 .grid-2 {
